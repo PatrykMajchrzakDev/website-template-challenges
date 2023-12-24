@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="">
+      <nav class="flex flex-col">
+        <!-- LOGO AND ICONS -->
+        <div class="flex justify-between items-center py-2">
+          <div class="w-32"></div>
+          <div>
+            <img class="w-20" src="./assets/logo.png" alt="" />
+          </div>
+          <div class="w-32">
+            <ul class="flex">
+              <li class="p-2">
+                <a href="#"
+                  ><img class="w-6" src="./assets/profile-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="p-2">
+                <a href="#"
+                  ><img class="w-6" src="./assets/cart-icon.svg" alt=""
+                /></a>
+              </li>
+              <li class="p-2">
+                <a href="#"
+                  ><img class="w-6" src="./assets/money-bag-icon.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- CATEGORIES LIST -->
+        <div class="flex justify-center">
+          <ul class="flex px-2 py-2">
+            <li class="p-4"><a href=""></a>Women's</li>
+            <li class="p-4"><a href=""></a>Men's</li>
+            <li class="p-4"><a href=""></a>All Vintage</li>
+          </ul>
+        </div>
+        <!-- BLACK BAR -->
+        <div
+          class="w-full bg-black h-12 flex justify-center items-center text-white xl:max-w-full"
+        >
+          FREE SHIPPING OVER $29
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section
+      class="h-[66vh] md:h-[33vh] flex flex-col md:flex-row xl:max-w-7xl xl:mx-auto"
+    >
+      <div class="w-full md:w-1/2 md:h-full px-10 pt-10 sm:h-[25vh] md:h-full">
+        <h3 class="font-bold text-4xl tracking-wide">Save Jeans, Save Lives</h3>
+        <p class="tracking-wide text-lg mt-4">
+          You save vintage jeans and we donate 90% of profits to save lives.
+        </p>
+
+        <!-- Counter container -->
+        <div class="flex mt-5 items-center flex-col sm:flex-row">
+          <p class="w-1/2 font-bold text-3xl text-center md:text-left md:pr-3">
+            Price drops in
+          </p>
+
+          <!-- Counter boxes -->
+          <div class="w-1/2 flex justify-center">
+            <div class="flex flex-col">
+              <div class="flex">
+                <div class="flex flex-col">
+                  <div class="py-5 px-3 shadow-md mr-2 font-bold text-3xl">
+                    04
+                  </div>
+                  <div class="text-center mr-2 font-semibold text-sm">
+                    hours
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="py-5 px-3 shadow-md mr-2 font-bold text-3xl">
+                    45
+                  </div>
+                  <div class="text-center mr-2 font-semibold text-sm">
+                    minutes
+                  </div>
+                </div>
+                <div class="flex flex-col">
+                  <div class="py-5 px-3 shadow-md font-bold text-3xl">12</div>
+                  <div class="text-center font-semibold text-sm">seconds</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="w-full h-1/2 md:h-full md:w-1/2 bg-[url('./assets/hero-img-re.jpg')] bg-cover bg-center bg-no-repeat lg:bg-[center_bottom_-5rem]"
+      ></div>
+    </section>
+    <!-- 3 step section -->
+    <section class="h-[33vh] flex bg-[#eceff1] text-xl font-semibold">
+      <div class="xl:max-w-7xl mx-auto flex">
+        <!-- Step 1 -->
+        <div class="px-10 py-10">
+          <p>Step 1</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="280"
+            height="24"
+            viewBox="0 0 280 24"
+            fill="none"
+          >
+            <path
+              d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
+              fill="white"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: #181a1b"
+            ></path>
+          </svg>
+          <div>
+            <h2 class="pt-5">Find the Perfect Pair</h2>
+            <h3 class="font-normal pt-2 text-base">Browse our selection of vintage items</h3>
+            <div class="flex font-normal items-center pt-5 text-base">
+              <img src="https://boas.co/svg/arrow.svg" alt="" /><a href="" class="px-2">Browse Collection</a
+              ><img
+                src="https://boas.co/svg/arrow.svg"
+                alt=""
+                class="rotate-180"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="px-10 py-10">
+          <p>Step 2</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="280"
+            height="24"
+            viewBox="0 0 280 24"
+            fill="none"
+          >
+            <path
+              d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
+              fill="white"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: #181a1b"
+            ></path>
+          </svg>
+          <div>
+            <h2 class="pt-5">Take the Price of Take the Risk</h2>
+            <h3 class="font-normal pt-2 text-base">Do you like the current price? Take it! Do you want a bigger discount? Take the risk and wait for the price to drop</h3>
+          </div>
+        </div>
+        <!-- Step 3 -->
+        <div class="px-10 py-10">
+          <p>Step 3</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="280"
+            height="24"
+            viewBox="0 0 280 24"
+            fill="none"
+          >
+            <path
+              d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
+              fill="white"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: #181a1b"
+            ></path>
+          </svg>
+          <div>
+            <h2 class="pt-5">Set a reminder</h2>
+            <h3 class="font-normal pt-2 text-base">Decided to take the risk? Turn on price drop notification so you don't miss amazing prices on amazing vintage...</h3>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
