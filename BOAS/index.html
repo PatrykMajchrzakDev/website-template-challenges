@@ -5,33 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BOAS</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- HEADER -->
     <header class="">
       <nav class="flex flex-col">
         <!-- LOGO AND ICONS -->
-        <div class="flex justify-between items-center py-2">
-          <div class="w-32"></div>
+        <div
+          class="flex max-[400px]:justify-center justify-around items-center py-2"
+        >
+          <div class="w-0 sm:w-32"></div>
           <div>
-            <img class="w-20" src="./assets/logo.png" alt="" />
+            <img
+              class="w-14 sm:w-20 max-[400px]:mr-10"
+              src="./assets/logo.png"
+              alt=""
+            />
           </div>
           <div class="w-32">
             <ul class="flex">
-              <li class="p-2">
-                <a href="#"
-                  ><img class="w-6" src="./assets/profile-icon.svg" alt=""
-                /></a>
+              <li class="p-2 flex flex-col text-center">
+                <a href="#" class="text-sm"
+                  ><img
+                    class="w-full h-7"
+                    src="./assets/profile-icon.svg"
+                    alt=""
+                  />Account</a
+                >
               </li>
-              <li class="p-2">
-                <a href="#"
-                  ><img class="w-6" src="./assets/cart-icon.svg" alt=""
-                /></a>
+              <li class="p-2 flex flex-col text-center">
+                <a href="#" class="text-sm"
+                  ><img
+                    class="w-full h-7"
+                    src="./assets/cart-icon.svg"
+                    alt=""
+                  />Cart</a
+                >
               </li>
-              <li class="p-2">
-                <a href="#"
-                  ><img class="w-6" src="./assets/money-bag-icon.png" alt=""
-                /></a>
+              <li class="p-2 flex flex-col text-center">
+                <a href="#" class="text-sm"
+                  ><img
+                    class="w-full h-7"
+                    src="./assets/money-bag-icon.png"
+                    alt=""
+                  />Invest</a
+                >
               </li>
             </ul>
           </div>
@@ -57,7 +86,7 @@
     <section
       class="h-[66vh] md:h-[33vh] flex flex-col md:flex-row xl:max-w-7xl xl:mx-auto"
     >
-      <div class="w-full md:w-1/2 md:h-full px-10 pt-10 sm:h-[25vh] md:h-full">
+      <div class="w-full md:w-1/2 px-10 pt-10 sm:h-[25vh] md:h-full">
         <h3 class="font-bold text-4xl tracking-wide">Save Jeans, Save Lives</h3>
         <p class="tracking-wide text-lg mt-4">
           You save vintage jeans and we donate 90% of profits to save lives.
@@ -72,7 +101,7 @@
           <!-- Counter boxes -->
           <div class="w-1/2 flex justify-center">
             <div class="flex flex-col">
-              <div class="flex">
+              <div class="flex pb-10 md:pb-0">
                 <div class="flex flex-col">
                   <div class="py-5 px-3 shadow-md mr-2 font-bold text-3xl">
                     04
@@ -98,90 +127,269 @@
           </div>
         </div>
       </div>
+      <!-- Right image -->
       <div
         class="w-full h-1/2 md:h-full md:w-1/2 bg-[url('./assets/hero-img-re.jpg')] bg-cover bg-center bg-no-repeat lg:bg-[center_bottom_-5rem]"
       ></div>
     </section>
+
     <!-- 3 step section -->
-    <section class="h-[33vh] flex bg-[#eceff1] text-xl font-semibold">
-      <div class="xl:max-w-7xl mx-auto flex">
-        <!-- Step 1 -->
-        <div class="px-10 py-10">
-          <p>Step 1</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="280"
-            height="24"
-            viewBox="0 0 280 24"
-            fill="none"
+    <section class="text-xl font-semibold xl:max-w-7xl mx-auto pt-10">
+      <div class="swiper w-full h-full ThreeStepSwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <!-- Step 1 -->
+          <div
+            class="swiper-slide h-[25vh] text-lg flex justify-center items-center relative"
           >
-            <path
-              d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
-              fill="white"
-              data-darkreader-inline-fill=""
-              style="--darkreader-inline-fill: #181a1b"
-            ></path>
-          </svg>
-          <div>
-            <h2 class="pt-5">Find the Perfect Pair</h2>
-            <h3 class="font-normal pt-2 text-base">Browse our selection of vintage items</h3>
-            <div class="flex font-normal items-center pt-5 text-base">
-              <img src="https://boas.co/svg/arrow.svg" alt="" /><a href="" class="px-2">Browse Collection</a
-              ><img
-                src="https://boas.co/svg/arrow.svg"
-                alt=""
-                class="rotate-180"
-              />
+            <div class="px-10 pt-10 w-full h-full bg-[#eceff1]">
+              <p class="text-xl">Step 1</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 280 24"
+                fill="none"
+                class="w-full py-2"
+              >
+                <path
+                  d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
+                  fill="white"
+                  style="--darkreader-inline-fill: #181a1b"
+                ></path>
+              </svg>
+              <div>
+                <h2 class="pt-5">Find the Perfect Pair</h2>
+                <h3 class="font-normal pt-2 text-base">
+                  Browse our selection of vintage items
+                </h3>
+                <div class="flex font-normal items-center pt-5 text-base">
+                  <img src="https://boas.co/svg/arrow.svg" alt="" /><a
+                    href=""
+                    class="px-2"
+                    >Browse Collection</a
+                  ><img
+                    src="https://boas.co/svg/arrow.svg"
+                    alt=""
+                    class="rotate-180 px-2"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div
+            class="swiper-slide h-[25vh] text-lg flex justify-center items-center relative"
+          >
+            <div class="px-10 pt-10 w-full h-full bg-[#eceff1]">
+              <p class="text-xl">Step 2</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 280 24"
+                fill="none"
+                class="w-full py-2"
+              >
+                <path
+                  d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
+                  fill="white"
+                  style="--darkreader-inline-fill: #181a1b"
+                ></path>
+              </svg>
+              <div>
+                <h2 class="pt-5">Take the Price of Take the Risk</h2>
+                <h3 class="font-normal pt-2 text-base">
+                  Do you like the current price? Take it! Do you want a bigger
+                  discount? Take the risk and wait for the price to drop
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div
+            class="swiper-slide h-[25vh] text-lg flex justify-center items-center relative"
+          >
+            <div class="px-10 pt-10 w-full h-full bg-[#eceff1]">
+              <p class="text-xl">Step 3</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 280 24"
+                fill="none"
+                class="w-full py-2"
+              >
+                <path
+                  d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
+                  fill="white"
+                  style="--darkreader-inline-fill: #181a1b"
+                ></path>
+              </svg>
+              <div>
+                <h2 class="pt-5">Set a reminder</h2>
+                <h3 class="font-normal pt-2 text-base">
+                  Decided to take the risk? Turn on price drop notification so
+                  you don't miss amazing prices on amazing vintage...
+                </h3>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Pagination for slides -->
+        <div class="swiper-pagination"></div>
 
-        <!-- Step 2 -->
-        <div class="px-10 py-10">
-          <p>Step 2</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="280"
-            height="24"
-            viewBox="0 0 280 24"
-            fill="none"
-          >
-            <path
-              d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
-              fill="white"
-              data-darkreader-inline-fill=""
-              style="--darkreader-inline-fill: #181a1b"
-            ></path>
-          </svg>
-          <div>
-            <h2 class="pt-5">Take the Price of Take the Risk</h2>
-            <h3 class="font-normal pt-2 text-base">Do you like the current price? Take it! Do you want a bigger discount? Take the risk and wait for the price to drop</h3>
-          </div>
-        </div>
-        <!-- Step 3 -->
-        <div class="px-10 py-10">
-          <p>Step 3</p>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="280"
-            height="24"
-            viewBox="0 0 280 24"
-            fill="none"
-          >
-            <path
-              d="M279.061 13.0607C279.646 12.4749 279.646 11.5251 279.061 10.9393L269.515 1.3934C268.929 0.807611 267.979 0.807611 267.393 1.3934C266.808 1.97919 266.808 2.92893 267.393 3.51472L275.879 12L267.393 20.4853C266.808 21.0711 266.808 22.0208 267.393 22.6066C267.979 23.1924 268.929 23.1924 269.515 22.6066L279.061 13.0607ZM0 13.5H278V10.5H0V13.5Z"
-              fill="white"
-              data-darkreader-inline-fill=""
-              style="--darkreader-inline-fill: #181a1b"
-            ></path>
-          </svg>
-          <div>
-            <h2 class="pt-5">Set a reminder</h2>
-            <h3 class="font-normal pt-2 text-base">Decided to take the risk? Turn on price drop notification so you don't miss amazing prices on amazing vintage...</h3>
-          </div>
-        </div>
-        </div>
+        <!-- Left, right buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
     </section>
+
+    <!-- Carousel section -->
+    <section class="xl:max-w-7xl mx-auto relative pt-10">
+      <div class="swiper w-full h-full mySwiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div
+            class="swiper-slide h-[33vh] text-center text-lg bg-white flex justify-center items-center relative"
+          >
+            <a href="#" class="absolute inset-0 z-10"></a>
+            <img
+              src="https://d1k98jamwa6vrd.cloudfront.net/small_hanging_Jeans_adf1a84f6b.jpg?w=384&q=75"
+              draggable="false"
+              alt="img"
+              class="block w-full h-full object-cover opacity-85 absolute"
+            />
+            <p class="absolute font-medium text-white text-2xl">Under €30</p>
+          </div>
+          <div
+            class="swiper-slide h-[33vh] text-center text-lg bg-white flex justify-center items-center"
+          >
+            <img
+              src="https://d1k98jamwa6vrd.cloudfront.net/small_Gizem_501_da8dbb1953.webp?w=384&q=75"
+              draggable="false"
+              alt="img"
+              class="block w-full h-full object-cover opacity-85 absolute"
+            />
+            <p class="absolute font-medium text-white text-2xl">Levi's 501</p>
+          </div>
+          <div
+            class="swiper-slide h-[33vh] text-center text-lg bg-white flex justify-center items-center"
+          >
+            <img
+              src="https://d1k98jamwa6vrd.cloudfront.net/small_Upcycled_Black_48db5f0c3e.jpg?w=384&q=75"
+              draggable="false"
+              alt="img"
+              class="block w-full h-full object-cover opacity-85 absolute"
+            />
+            <p class="absolute font-medium text-white text-2xl">Black</p>
+          </div>
+          <div
+            class="swiper-slide h-[33vh] text-center text-lg bg-white flex justify-center items-center"
+          >
+            <img
+              src="https://d1k98jamwa6vrd.cloudfront.net/small_Skinny_Jeans_Men_bfa602cfd7.png?w=384&q=75"
+              draggable="false"
+              alt="img"
+              class="block w-full h-full object-cover opacity-85 absolute"
+            />
+            <p class="absolute font-medium text-white text-2xl">Dark blue</p>
+          </div>
+          <div
+            class="swiper-slide h-[33vh] text-center text-lg bg-white flex justify-center items-center"
+          >
+            <img
+              src="https://d1k98jamwa6vrd.cloudfront.net/small_Gizem_Lightblue_Wash_1d3f3735fe.jpg?w=384&q=75"
+              draggable="false"
+              alt="img"
+              class="block w-full h-full object-cover opacity-85 absolute"
+            />
+            <p class="absolute font-medium text-white text-2xl">Light blue</p>
+          </div>
+          <div
+            class="swiper-slide h-[33vh] text-center text-lg bg-white flex justify-center items-center"
+          >
+            <img
+              src="https://d1k98jamwa6vrd.cloudfront.net/Upcycled_Smiles_Marghe_f22003266a.png?w=256&q=75"
+              draggable="false"
+              alt="img"
+              class="block w-full h-full object-cover opacity-85 absolute"
+            />
+            <p class="absolute font-medium text-white text-2xl">
+              Upcycled jeans
+            </p>
+          </div>
+        </div>
+        <!-- Pagination for slides -->
+        <div class="swiper-pagination"></div>
+
+        <!-- Left, right buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <!-- Levi's Jeans categories -->
+    <section class="xl:max-w-7xl mx-auto relative py-10">
+      <article class="relative py-10">
+        <div class="px-5">
+          <p class="font-bold text-white text-4xl">Levi's Jeans</p>
+          <h2 class="text-white pt-2">
+            Browse more than one thousand authentic Vintage Levi's Jeans. Pick
+            your favourite model below.
+          </h2>
+        </div>
+        <div class="flex flex-wrap items-center">
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            501
+          </div>
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            502
+          </div>
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            504
+          </div>
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            505
+          </div>
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            511
+          </div>
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            512
+          </div>
+          <div
+            class="text-white text-lg border-2 border-white w-[10%] m-2 sm:m-5 p-2 text-center"
+          >
+            550
+          </div>
+        </div>
+        <img
+          src="https://d1k98jamwa6vrd.cloudfront.net/large_5jeans_Coverimage_ef73e3b697.jpg?w=3840&q=75"
+          alt="pile of jeans"
+          class="absolute w-full h-full object-cover left-0 top-0 -z-10"
+        />
+      </article>
+    </section>
   </body>
+
+  <!-- This style is needed to style swiper pagination bullets -->
+  <style>
+    .swiper-pagination-bullet-active {
+      background-color: black;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </html>
